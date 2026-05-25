@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  animation: all 5s;
+}
+
+/* 
+=============================================
+  General styles
+============================================= 
+*/
+
+.relativeContainer {
+  position: relative;
+}
+
+.ThemeStyleButton {
+  background: #d1d5db;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  transition: all 1;
+  outline: none;
+  transform: scale(1.01);
+}
+
+/* Primary button (blue) */
+
+.button-primary {
+  background: #2563eb;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.button-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Secondary button (yellow) */
+.button-secondary {
+  background: #eab308;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.button-secondary:hover {
+  background: #ca8a04;
+}
+
+/* third button (gray) */
+.button-tertiary {
+  background: #6b7280;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.button-tertiary:hover {
+  background: #4b5563;
+}
+
+/* Text fields */
+.text-field {
+  outline: none;
+  border: 1px solid #d1d5db;
+  border-width: 2px;
+  border-radius: 8px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  background: #FFF;
+  color: #111827;
+  -fx-prompt-text-fill: #6b7280;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Labels */
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* 
+=============================================
+  Light mode
+============================================= 
+*/
+
+.screen-background {
+  background: #f3f4f6;
+}
+
+.container {
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px 3px rgba(155, 155, 155, 0.1);
+}
+
+.logo-container {
+  background: #d1d5db;
+  border-radius: 8px;
+  color: #6b7280;
+  font-size: 12px;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+.title {
+  color: #2563eb;
+}
+
+.label {
+  color: #374151;
+}
+
+.text-field:focus {
+  border-color: #2563eb;
+}
+
+/* 
+=============================================
+  Dark Mode
+============================================= 
+*/
+
+.screen-background-dark-mode {
+  background: #111827;
+}
+
+.screen-background-dark-mode .container {
+  background: #1f2937;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px 3px rgba(34, 34, 34, 0.3);
+}
+
+.screen-background-dark-mode .ThemeStyleButton {
+  background: #374151;
+  color: #FFF;
+}
+
+.screen-background-dark-mode .logo-container {
+  background: #374151;
+  border-radius: 8px;
+  color: #9ca3af;
+}
+
+.screen-background-dark-mode .title {
+  color: #60a5fa;
+}
+
+.screen-background-dark-mode label {
+  color: #d1d5db;
+}
+
+.screen-background-dark-mode .text-field {
+  background: #374151;
+  border-color: #4b5563;
+  color: #FFF;
+  -fx-prompt-text-fill: #9ca3af;
+}
+
+.screen-background-dark-mode .text-field:focus {
+  border-color: #3b82f6;
+}
